@@ -1,3 +1,9 @@
+/**
+ * This program adds an order for a pizza to a database
+ * 12.06.17
+ * CSC 251 0001 -- Project 2 -- Pizzeria
+ * @author Matthew (Melissa) Walsh, Erika Wilson, Jeovannie Melendezmorales
+ */
 
 package project2_GroupProject;
 import javafx.application.Application;
