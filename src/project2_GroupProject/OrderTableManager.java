@@ -6,6 +6,11 @@ public class OrderTableManager {
     // Create a named constant for the URL
     public final String DB_URL = "jdbc:derby://localhost:1527/Pizza";
     
+    /**
+     * Be sure to go into services and connect to the database prior to running
+     * the code
+     */
+    
     
     // Field for database connection
     private Connection conn;
