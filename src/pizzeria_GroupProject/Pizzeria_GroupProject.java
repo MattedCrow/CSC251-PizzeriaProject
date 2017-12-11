@@ -5,7 +5,7 @@
  * @author Matthew (Melissa) Walsh, Erika Wilson, Jeovannie Melendezmorales
  */
 
-package project2_GroupProject;
+package pizzeria_GroupProject;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,10 +13,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.sql.*;
 
-public class Project2_GroupProject extends Application {
+public class Pizzeria_GroupProject extends Application {
     public void start(Stage stage) throws Exception {
         // Load the FXML file
-        Parent parent = FXMLLoader.load(getClass().getResource("project2_GroupProject.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("pizzeria_GroupProject.fxml"));
         
         // Build the scene graph
         Scene scene = new Scene(parent);

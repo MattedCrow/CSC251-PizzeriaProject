@@ -1,4 +1,4 @@
-package project2_GroupProject;
+package pizzeria_GroupProject;
 
 import java.sql.*;
 

@@ -4,7 +4,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2_GroupProject.Project2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizzeria_GroupProject.PizzeriaController">
    <children>
       <Label fx:id="sizeLabel" layoutX="13.0" layoutY="8.0" text="Select Pizza Size:" />
       <Label fx:id="crustLabel" layoutX="9.0" layoutY="80.0" text="Select Crust Style:" />

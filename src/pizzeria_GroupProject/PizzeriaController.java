@@ -1,4 +1,4 @@
-package project2_GroupProject;
+package pizzeria_GroupProject;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
@@ -8,7 +8,7 @@ import javafx.scene.control.ToggleGroup;
 import javax.swing.*;
 import java.sql.*;
 
-public class Project2Controller {
+public class PizzeriaController {
 
     @FXML
     private RadioButton xtraLargeSizeRadioButton;
