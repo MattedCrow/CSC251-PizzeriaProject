@@ -97,7 +97,7 @@ public class Project2Controller {
         double cost = 0.0; // Pizza cost
         size = "";
         crustStyleVar = "";
-        toppingList = "Topping List: |";
+        toppingList = "Topping List |";
     }
     
     // Event listener for submit button
@@ -208,6 +208,9 @@ public class Project2Controller {
             OrderTableManager orderManager = new OrderTableManager();
             orderManager.insert(size, crustStyleVar, toppingList, cost);
             JOptionPane.showMessageDialog(null, "Order created!");
+            
+            toppingList = "Topping List |";
+            cost = 0;
         }
         catch (SQLException ex) {
             ex.printStackTrace();

@@ -4,11 +4,14 @@ import java.sql.*;
 
 public class OrderTableManager {
     // Create a named constant for the URL
-    public final String DB_URL = "jdbc:derby://localhost:1527/Pizza";
+    public final String DB_URL = "jdbc:derby://localhost:1527/Pizza;create=true";
     
     /**
-     * Be sure to go into services and connect to the database prior to running
-     * the code
+     * Be sure to go into services and create/connect to the database "Pizza" prior to running
+     * the code- otherwise, the database will not be able to be viewed
+     * 
+     * Directions -> Services, Right Click "Java DB", "Create Database...",
+     * name it "Pizza", no username, no password, "Ok", and you should be done
      */
     
     
@@ -20,7 +23,7 @@ public class OrderTableManager {
      */
     public OrderTableManager() throws SQLException {
         // Create a connection to database
-        conn = DriverManager.getConnection(DB_URL, "user1", "password");
+        conn = DriverManager.getConnection(DB_URL);
     }
     
     public void insert(String size, String crustStyle,
@@ -33,7 +36,16 @@ public class OrderTableManager {
         Statement stmt = conn.createStatement();
         
         // Send statement to the DBMS
-        stmt.executeUpdate(query);
+        try {
+            stmt.execute("CREATE TABLE ordertable (size varchar(255), " +
+                    "crustStyle varchar(255), " +
+                    "toppingList varchar(255), " +
+                    "cost varchar(255))");
+        }
+        catch ( SQLException e ) {
+        
+        }
+        stmt.execute(query);
         
         // Close statement
         conn.close();
